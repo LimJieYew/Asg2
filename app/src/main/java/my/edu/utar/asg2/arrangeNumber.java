@@ -41,6 +41,7 @@ public class arrangeNumber extends AppCompatActivity {
 
 
         generateQuestion();
+        submitButton.setEnabled(false);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +90,7 @@ public class arrangeNumber extends AppCompatActivity {
                 checkAnswer(submitted);
                 checkCount = 0;
                 generateQuestion();
+                submitButton.setEnabled(false);
             }
         });
 
